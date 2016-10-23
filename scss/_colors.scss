@@ -2,10 +2,15 @@
 .bg-green      { background-color: $green; }
 .bg-yellow     { background-color: $yellow; }
 .bg-blue       { background-color: $blue; }
-.bg-white      { background-color: $white; }
+
+.bg-white      {
+  background-color: $white;
+  color: $dark-background;
+}
 
 .text-red        { color: $red; }
 .text-green      { color: $green; }
 .text-yellow     { color: $yellow; }
 .text-blue       { color: $blue; }
 .text-white      { color: $white; }
+.text-muted      { opacity: .7; }

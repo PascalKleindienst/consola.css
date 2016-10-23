@@ -459,7 +459,8 @@ body {
   background-color: #3498db; }
 
 .bg-white {
-  background-color: #ecf0f1; }
+  background-color: #ecf0f1;
+  color: #2c3e50; }
 
 .text-red {
   color: #e74c3c; }
@@ -475,6 +476,9 @@ body {
 
 .text-white {
   color: #ecf0f1; }
+
+.text-muted {
+  opacity: .7; }
 
 .table {
   margin-bottom: 1.65rem;
