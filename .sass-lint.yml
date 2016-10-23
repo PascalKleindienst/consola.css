@@ -1,0 +1,11 @@
+# File Options
+files:
+  include: 'scss/**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules/**/*.*'
+# Rule Configuration
+rules:
+  property-sort-order:
+    - 1
+    -
+      order: concentric
