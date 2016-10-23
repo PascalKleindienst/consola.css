@@ -2,3 +2,19 @@ hr {
   border: 0;
   border-bottom: 1px dashed $dark-font-color;
 }
+
+.container,
+.container-fluid  {
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $viewport-xl;
+  box-sizing: border-box;
+}
