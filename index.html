@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Consola.css</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/consola.css" rel="stylesheet">
+    </head>
+    <body class="container container-fluid">
+        <!--<h3>Typography</h3>-->
+        <!--<h4>Headings</h4>
+        <p>
+            All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, 
+            for when you want to match the font styling of a heading but still want your text to be displayed inline.
+        </p>
+        
+        <h1>h1. heading</h1>
+        <h2>h2. heading</h2>
+        <h3>h3. heading</h3>
+        <h4>h4. heading</h4>
+        <h5>h5. heading</h5>
+        <h6>h6. heading</h6>
+        
+<pre>&lt;h1&gt;h1. heading&lt;/h1&gt;
+&lt;h2&gt;h2. heading&lt;/h2&gt;
+&lt;h3&gt;h3. heading&lt;/h3&gt;
+&lt;h4&gt;h4. heading&lt;/h4&gt;
+&lt;h5&gt;h5. heading&lt;/h5&gt;
+&lt;h6&gt;h6. heading&lt;/h6&gt;
+</pre>-->
+        
+        <!--<hr />-->
+
+        <h3>Code</h3>
+        <h4>Inline</h4>
+        <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+        <pre>&lt;code&gt;Some code..&lt;/code&gt;</pre>
+
+        <h4>Basic block</h4>
+        <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+        <pre>&lt;pre&gt;Sample code here...&lt;/pre&gt;</pre>
+
+        <hr />
+
+        <h3>Tables</h3>
+        <h4>Basic example</h4>
+        <table class="table">
+            <caption>Optional table caption.</caption>
+            <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead>
+            <tbody> 
+                <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr>
+                <tr><th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr>
+                <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr>
+            </tbody>
+        </table>
+        <pre>&lt;table class="table"&gt; ... &lt;/table&gt;</pre>
+
+        <h4>Bordered example</h4>
+        <table class="table table-bordered">
+            <caption>Optional table caption.</caption>
+            <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead>
+            <tbody> 
+                <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr>
+                <tr><th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr>
+                <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr>
+            </tbody>
+        </table>
+        <pre>&lt;table class="table table-bordered"&gt; ... &lt;/table&gt;</pre>
+
+        <h4>Grid example</h4>
+        <table class="table table-grid">
+            <caption>Optional table caption.</caption>
+            <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead>
+            <tbody> 
+                <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr>
+                <tr><th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr>
+                <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr>
+            </tbody>
+        </table>
+        <pre>&lt;table class="table table-grid"&gt; ... &lt;/table&gt;</pre>
+        
+        <hr />
+
+        <h3>Helper Classes</h3>
+        <h4>Contextual colors</h4>
+        <p class="text-red">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="text-green">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="text-yellow">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <p class="text-blue">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+<pre>&lt;p class="text-red"&gt; ...  &lt;/p&gt;
+&lt;p class="text-green"&gt; ...  &lt;/p&gt;
+&lt;p class="text-yellow"&gt; ...  &lt;/p&gt;
+&lt;p class="text-blue"&gt; ...  &lt;/p&gt;</pre>
+
+        <h4>Background colors</h4>
+        <p class="bg-red">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="bg-green">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="bg-yellow">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <p class="bg-blue">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+<pre>&lt;p class="bg-red"&gt; ...  &lt;/p&gt;
+&lt;p class="bg-green"&gt; ...  &lt;/p&gt;
+&lt;p class="bg-yellow"&gt; ...  &lt;/p&gt;
+&lt;p class="bg-blue"&gt; ...  &lt;/p&gt;</pre>
+        <hr />
+
+        <h4>Progress Bar</h4>
+        <p>Indeterminate:
+            <span class="progress progress-indeterminate">
+                <span class="progress-bar" role="progressbar"></span>
+            </span>
+        </p>
+<pre>&lt;span class="progress progress-indeterminate"&gt;
+    &lt;span class="progress-bar" role="progressbar"&gt;&lt;/span&gt;
+&lt;/span&gt;</pre>
+
+        <p>Determinate:
+            <div class="progress" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar"  style="width: 60%;"></div>
+            </div>
+        </p>
+<pre>&lt;div class="progress" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"&gt;
+    &lt;div class="progress-bar" role="progressbar" style="width: 60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+    </body>
+</html>
