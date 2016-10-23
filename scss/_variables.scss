@@ -6,6 +6,7 @@ $blue:   #3498db !default;
 // $magenta:
 // $cyan:
 $white:  #ecf0f1 !default;
+$gray:   #2c3e50 !default;
 
 // Viewports
 $viewport-m: 32rem !default;
@@ -19,5 +20,9 @@ $font-weight: 400 !default;
 $font-family: 'Inconsolata', 'Lucida Console', Courier, monospace !default;
 
 // Dark Theme (default)
-$dark-background: #2c3e50;
+$dark-background: $gray !default;
 $dark-font-color: $white !default;
+
+// Code
+$code-color: $gray !default;
+$code-bg:    $white !default;
