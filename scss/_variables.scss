@@ -1,0 +1,23 @@
+// colors
+$red:    #e74c3c !default;
+$green:  #2ecc71 !default;
+$yellow: #f1c40f !default;
+$blue:   #3498db !default;
+// $magenta:
+// $cyan:
+$white:  #ecf0f1 !default;
+
+// Viewports
+$viewport-m: 32rem !default;
+$viewport-l: 48rem !default;
+
+// Fonts
+$font-size: 12px !default;
+$font-size-m: 15px !default;
+$font-size-l: 16px !default;
+$font-weight: 400 !default;
+$font-family: 'Inconsolata', 'Lucida Console', Courier, monospace !default;
+
+// Dark Theme (default)
+$dark-background: #2c3e50;
+$dark-font-color: $white !default;
