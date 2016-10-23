@@ -1,0 +1,59 @@
+.progress {
+  // Determinate
+  &:not(.progress-indeterminate) {
+    position: relative;
+    max-width: calc(100% - 3rem);
+
+    // Opening and Clogin Brackets
+    &::before {
+      position: absolute;
+      top: -.525rem;
+      content: '[ ';
+    }
+
+    &::after {
+      position: absolute;
+      top: -.525rem;
+      right: -2.75rem;
+      content: ']    ' attr(aria-valuenow) '%';
+    }
+
+    // bar
+    .progress-bar {
+      position: relative;
+      margin-top: .375rem;
+      margin-left: .4125rem;
+      border-top: 1px solid $dark-font-color;
+      background-color: transparent;
+      height: .625rem;
+    }
+  }
+
+  // Indeterminate
+  &.progress-indeterminate {
+    .progress-bar {
+      margin-left: .4125rem;
+
+      &::after {
+        display: inline-block;
+        animation: ellipsis steps(4, end) 2000ms infinite;
+        overflow: hidden;
+        vertical-align: bottom;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        content: '\2026'; // ascii code for the ellipsis character
+      }
+    }
+  }
+}
+
+// loading animation
+@keyframes ellipsis {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 2.5rem;
+  }
+}
