@@ -26,6 +26,7 @@ gulp.task('scss', function() {
     .pipe(cssmin({ keepSpecialComments: 0 }))
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
+    .pipe(header('/*! <%= pkg.name %> v<%= pkg.version %> | <%= pkg.author %> | <%= pkg.license %> | <%= pkg.homepage %> */\n', { pkg: pkg }))
     .pipe(gulp.dest('css'));
 });
 
