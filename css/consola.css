@@ -1346,18 +1346,18 @@ form textarea {
       .radio input[type='radio'] + label::before {
         float: right;
         margin-left: 1rem; }
-  .checkbox input[type='checkbox'] + label::before,
-  .radio input[type='checkbox'] + label::before {
-    content: '[ ]'; }
-  .checkbox input[type='checkbox']:checked + label::before,
-  .radio input[type='checkbox']:checked + label::before {
-    content: '[X]'; }
-  .checkbox input[type='radio'] + label::before,
-  .radio input[type='radio'] + label::before {
-    content: '( )'; }
-  .checkbox input[type='radio']:checked + label::before,
-  .radio input[type='radio']:checked + label::before {
-    content: '(\25CF)'; }
+
+.checkbox input[type='checkbox'] + label::before {
+  content: '[ ]'; }
+
+.checkbox input[type='checkbox']:checked + label::before {
+  content: '[X]'; }
+
+.radio input[type='radio'] + label::before {
+  content: '( )'; }
+
+.radio input[type='radio']:checked + label::before {
+  content: '(\25CF)'; }
 
 label {
   display: inline-block;

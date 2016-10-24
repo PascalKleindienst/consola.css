@@ -66,8 +66,12 @@ form {
         }
       }
     }
+  }
+}
 
-    // Custom Checkbox styles
+// Custom Checkbox styles
+.checkbox {
+  input {
     &[type='checkbox'] {
       & + label::before {
         content: '[ ]';
@@ -77,8 +81,12 @@ form {
         content: '[X]';
       }
     }
+  }
+}
 
-    // Custom Radio Styles
+// Custom Radio Styles
+.radio {
+  input {
     &[type='radio'] {
       & + label::before {
         content: '( )';
@@ -99,6 +107,7 @@ label {
   font-weight: 700;
 }
 
+// Responsive Horizontal form
 @media (min-width: $viewport-l) {
   .form-horizontal {
     label {
