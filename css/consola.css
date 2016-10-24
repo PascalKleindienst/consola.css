@@ -1,7 +1,7 @@
 /**
- * consola.css - 
+ * consola.css - A lightweight CSS micro-framework for a console like style
  * @author Pascal Kleindienst
- * @version v0.1.0
+ * @version v0.1.1
  * @link https://github.com/PascalKleindienst/consola-css#readme
  * @license MIT
  */
@@ -1289,6 +1289,89 @@ ul:not(.list-unstyled) {
   .table-grid th,
   .table-grid td {
     border-bottom: 1px dashed #ecf0f1; }
+
+form .form-group {
+  margin-bottom: 1rem; }
+
+form input,
+form textarea {
+  display: block;
+  border: 0;
+  background-color: transparent;
+  background-image: none;
+  width: 100%;
+  color: #ecf0f1;
+  font-family: "Inconsolata", "Lucida Console", Courier, monospace; }
+  form input:focus,
+  form textarea:focus {
+    outline: 0; }
+
+.checkbox,
+.radio {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .checkbox label,
+  .radio label {
+    margin-bottom: 0;
+    cursor: pointer;
+    min-height: 20px;
+    font-weight: 400; }
+  .checkbox input[type='checkbox'], .checkbox input[type='radio'],
+  .radio input[type='checkbox'],
+  .radio input[type='radio'] {
+    display: inline-block;
+    border: 0;
+    border-radius: 0;
+    width: auto;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+    .checkbox input[type='checkbox']:checked, .checkbox input[type='checkbox']:not(:checked), .checkbox input[type='radio']:checked, .checkbox input[type='radio']:not(:checked),
+    .radio input[type='checkbox']:checked,
+    .radio input[type='checkbox']:not(:checked),
+    .radio input[type='radio']:checked,
+    .radio input[type='radio']:not(:checked) {
+      position: relative;
+      visibility: hidden;
+      margin: 0;
+      padding: 0; }
+    .checkbox input[type='checkbox'] + label, .checkbox input[type='radio'] + label,
+    .radio input[type='checkbox'] + label,
+    .radio input[type='radio'] + label {
+      float: left; }
+      .checkbox input[type='checkbox'] + label::before, .checkbox input[type='radio'] + label::before,
+      .radio input[type='checkbox'] + label::before,
+      .radio input[type='radio'] + label::before {
+        float: right;
+        margin-left: 1rem; }
+  .checkbox input[type='checkbox'] + label::before,
+  .radio input[type='checkbox'] + label::before {
+    content: '[ ]'; }
+  .checkbox input[type='checkbox']:checked + label::before,
+  .radio input[type='checkbox']:checked + label::before {
+    content: '[X]'; }
+  .checkbox input[type='radio'] + label::before,
+  .radio input[type='radio'] + label::before {
+    content: '( )'; }
+  .checkbox input[type='radio']:checked + label::before,
+  .radio input[type='radio']:checked + label::before {
+    content: '(\25CF)'; }
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  max-width: 100%;
+  font-weight: 700; }
+
+@media (min-width: 48rem) {
+  .form-horizontal label {
+    float: left;
+    margin-bottom: 0;
+    width: 16.66666667%; }
+  .form-horizontal input {
+    width: 83.33333333%; } }
 
 code, pre {
   background-color: #ecf0f1;

@@ -1,0 +1,114 @@
+// Basic form styles
+form {
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  input,
+  textarea {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    background-image: none;
+    width: 100%;
+    color: $dark-font-color;
+    font-family: $font-family;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+// Checkbox and Radio Styles
+.checkbox,
+.radio {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  // Label
+  label {
+    margin-bottom: 0;
+    cursor: pointer;
+    min-height: 20px;
+    font-weight: 400;
+  }
+
+  // Input
+  input {
+    // Remove default styles
+    &[type='checkbox'],
+    &[type='radio'] {
+      display: inline-block;
+      border: 0;
+      border-radius: 0;
+      width: auto;
+      appearance: none;
+
+      // hide checkbox
+      &:checked,
+      &:not(:checked) {
+        position: relative;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      // position label -> checkbox/radio
+      & + label {
+        float: left;
+
+        &::before {
+          float: right;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    // Custom Checkbox styles
+    &[type='checkbox'] {
+      & + label::before {
+        content: '[ ]';
+      }
+
+      &:checked + label::before {
+        content: '[X]';
+      }
+    }
+
+    // Custom Radio Styles
+    &[type='radio'] {
+      & + label::before {
+        content: '( )';
+      }
+
+      &:checked + label::before {
+        content: '(\25CF)';
+      }
+    }
+  }
+}
+
+// Labels
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  max-width: 100%;
+  font-weight: 700;
+}
+
+@media (min-width: $viewport-l) {
+  .form-horizontal {
+    label {
+      float: left;
+      margin-bottom: 0;
+      width: 16.66666667%;
+    }
+
+    input {
+      width: 83.33333333%;
+    }
+  }
+}
