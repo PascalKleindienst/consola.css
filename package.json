@@ -1,7 +1,7 @@
 {
   "name": "consola.css",
   "version": "0.1.0",
-  "description": "",
+  "description": "A lightweight CSS micro-framework for a console like style",
   "main": "css/consola.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
