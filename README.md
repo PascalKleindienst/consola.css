@@ -51,6 +51,6 @@ See [LICENSE](LICENSE) for full license description
 [link-license]: https://raw.githubusercontent.com/PascalKleindienst/consola.css/master/LICENSE
 [icon-npm]: https://img.shields.io/npm/v/consola.css.svg?style=flat-square
 [link-npm]: https://www.npmjs.com/package/consola.css
-[icon-npm-dt]: https://img.shields.io/npm/dt/consola.css.svg
+[icon-npm-dt]: https://img.shields.io/npm/dt/consola.css.svg?style=flat-square
 [icon-bower]: https://img.shields.io/bower/v/consola.css.svg?style=flat-square
 [link-bower]: https://github.com/PascalKleindienst/consola.css
