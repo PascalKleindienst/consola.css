@@ -4,8 +4,9 @@ consola.css is a lightweight CSS micro-framework for a console like style.
 It is very minimalistic and has therefore a small footprint of only **3.78 kB gzipped**.
 It also includes SCSS and CSS files and comes with a gulpfile for customizing the build.
 
- ## Installation
- Via bower
+## Installation
+
+Via bower
  ```
  $ bower install --save consola.css
  ```
