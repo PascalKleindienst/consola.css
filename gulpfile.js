@@ -19,7 +19,7 @@ gulp.task('scss', function() {
   return gulp.src('scss/consola.scss')
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
-    .pipe(prefix("last 2 versions"))
+    .pipe(prefix({browsers: ['last 2 versions', 'Android >= 4']}))
     .pipe(rename('consola.css'))
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest('css'))
