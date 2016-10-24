@@ -542,6 +542,22 @@ button {
     button.btn-link:hover {
       background-color: transparent; }
 
+.list-unstyled {
+  list-style-type: none; }
+
+ul:not(.list-unstyled) {
+  padding-left: 0;
+  list-style-type: none; }
+  ul:not(.list-unstyled) li::before {
+    display: inline-block;
+    margin-right: .75rem;
+    padding-left: 1.25rem;
+    content: '*'; }
+  ul:not(.list-unstyled) li ul {
+    padding-left: 2rem; }
+  ul:not(.list-unstyled).list-dash li::before {
+    content: '-'; }
+
 .table {
   margin-bottom: 1.65rem;
   width: 100%;
