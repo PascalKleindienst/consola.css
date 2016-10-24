@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 @import 'variables';
+@import 'mixins';
 @import 'normalize';
 @import 'base';
 @import 'typography';
 @import 'colors';
+@import 'buttons';
 @import 'tables';
 @import 'code';
 @import 'progressbar';

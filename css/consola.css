@@ -458,7 +458,8 @@ body {
 .bg-blue {
   background-color: #3498db; }
 
-.bg-white {
+.bg-white, .btn,
+button {
   background-color: #ecf0f1;
   color: #2c3e50; }
 
@@ -479,6 +480,67 @@ body {
 
 .text-muted {
   opacity: .7; }
+
+.btn,
+button {
+  transition: color .3s, background-color .3s;
+  border: 0;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none; }
+  .btn:active, .btn:focus, .btn:hover,
+  button:active,
+  button:focus,
+  button:hover {
+    background-color: #a3b6bb;
+    color: #ecf0f1; }
+  .btn.btn-red, .btn.btn-green, .btn.btn-blue, .btn.btn-link,
+  button.btn-red,
+  button.btn-green,
+  button.btn-blue,
+  button.btn-link {
+    color: #ecf0f1; }
+  .btn.btn-red,
+  button.btn-red {
+    background-color: #e74c3c; }
+    .btn.btn-red:active, .btn.btn-red:focus, .btn.btn-red:hover,
+    button.btn-red:active,
+    button.btn-red:focus,
+    button.btn-red:hover {
+      background-color: #bf2718; }
+  .btn.btn-green,
+  button.btn-green {
+    background-color: #2ecc71; }
+    .btn.btn-green:active, .btn.btn-green:focus, .btn.btn-green:hover,
+    button.btn-green:active,
+    button.btn-green:focus,
+    button.btn-green:hover {
+      background-color: #208e4e; }
+  .btn.btn-yellow,
+  button.btn-yellow {
+    background-color: #f1c40f; }
+    .btn.btn-yellow:active, .btn.btn-yellow:focus, .btn.btn-yellow:hover,
+    button.btn-yellow:active,
+    button.btn-yellow:focus,
+    button.btn-yellow:hover {
+      background-color: #aa8a0a; }
+  .btn.btn-blue,
+  button.btn-blue {
+    background-color: #3498db; }
+    .btn.btn-blue:active, .btn.btn-blue:focus, .btn.btn-blue:hover,
+    button.btn-blue:active,
+    button.btn-blue:focus,
+    button.btn-blue:hover {
+      background-color: #1d6fa5; }
+  .btn.btn-link,
+  button.btn-link {
+    background-color: transparent; }
+    .btn.btn-link:active, .btn.btn-link:focus, .btn.btn-link:hover,
+    button.btn-link:active,
+    button.btn-link:focus,
+    button.btn-link:hover {
+      background-color: transparent; }
 
 .table {
   margin-bottom: 1.65rem;

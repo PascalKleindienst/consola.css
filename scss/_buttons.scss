@@ -1,0 +1,30 @@
+.btn,
+button {
+  @extend .bg-white;
+  transition: color .3s, background-color .3s;
+  border: 0;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($white, 25%);
+    color: $dark-font-color;
+  }
+
+  &.btn-red,
+  &.btn-green,
+  &.btn-blue,
+  &.btn-link {
+    color: $white;
+  }
+
+  &.btn-red { @include btn-color($red); }
+  &.btn-green { @include btn-color($green); }
+  &.btn-yellow { @include btn-color($yellow); }
+  &.btn-blue { @include btn-color($blue); }
+  &.btn-link { @include btn-color(transparent); }
+}
