@@ -22,7 +22,7 @@
                             <span class="section-title">Grid</span>
 
                             <ul class="list-unstyled">
-                                                                    <li class="active">
+                                                                    <li class="">
                                         <a href="https://pascalkleindienst.github.io/consola.css/docs/grid-system.html">
                                             Responsive Grid System
                                         </a>
@@ -70,38 +70,28 @@
             </div>
 
             <article class="col-sm-8">
-                <h2 id="responsive-grid-system">Responsive Grid System</h2>
-<p>consola.css comes with a responsive grid system based on <code>display: flex;</code> based on <a href="http://flexboxgrid.com">http://flexboxgrid.com</a></p>
-<h3 id="example-mobile-and-desktop">Example: Mobile and desktop</h3>
-<div class="container">
-    <div class="row row-example">
-        <div class="col-xs-12 col-sm-6 col-md-8"><p>.col-xs-12 .col-sm-6 .col-md-8</p></div>
-        <div class="col-xs-6 col-md-4"><p>.col-xs-6 .col-md-4</p></div>
-    </div>
-    <div class="row row-example">
-        <div class="col-xs-6 col-sm-4"><p>.col-xs-6 .col-sm-4</p></div>
-        <div class="col-xs-6 col-sm-4"><p>.col-xs-6 .col-sm-4</p></div>
-        <div class="col-xs-6 col-sm-4"><p>.col-xs-6 .col-sm-4</p></div>
-    </div>
-</div>
-<pre><code class="language-html">&lt;div class="container"&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-8"&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
-        &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
-        &lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
-        &lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-<h3 id="example-fluid-container">Example: Fluid container</h3>
-<p>Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container</code> to <code>.container-fluid</code>.</p>
-<pre><code class="language-html">&lt;div class="container-fluid"&gt;
-  &lt;div class="row"&gt;
-    ...
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                <h2 id="tables">Tables</h2>
+<h3 id="basic-example">Basic Example</h3>
+<div class="consola-example">
+    <table class="table"><caption>Optional table caption.</caption>
+        <thead><tr><th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr></thead><tbody><tr><td>1</td> <td>Max</td> <td>Mustermann</td> <td>@max</td> </tr><tr><td>2</td> <td>John</td> <td>Doe</td> <td>@johnd</td> </tr><tr><td>3</td> <td>Jane</td> <td>Doe</td> <td>@janeDoe</td> </tr></tbody></table></div>
+<pre><code class="language-html">&lt;table class="table"&gt;
+    ... 
+&lt;/table&gt;</code></pre>
+<h3 id="bordered-table">Bordered Table</h3>
+<div class="consola-example">
+    <table class="table table-bordered"><caption>Optional table caption.</caption>
+        <thead><tr><th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr></thead><tbody><tr><td>1</td> <td>Max</td> <td>Mustermann</td> <td>@max</td> </tr><tr><td>2</td> <td>John</td> <td>Doe</td> <td>@johnd</td> </tr><tr><td>3</td> <td>Jane</td> <td>Doe</td> <td>@janeDoe</td> </tr></tbody></table></div>
+<pre><code class="language-html">&lt;table class="table table-bordered"&gt;
+    ... 
+&lt;/table&gt;</code></pre>
+<h3 id="grid-table">Grid Table</h3>
+<div class="consola-example">
+    <table class="table table-grid"><caption>Optional table caption.</caption>
+        <thead><tr><th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr></thead><tbody><tr><td>1</td> <td>Max</td> <td>Mustermann</td> <td>@max</td> </tr><tr><td>2</td> <td>John</td> <td>Doe</td> <td>@johnd</td> </tr><tr><td>3</td> <td>Jane</td> <td>Doe</td> <td>@janeDoe</td> </tr></tbody></table></div>
+<pre><code class="language-html">&lt;table class="table table-grid"&gt;
+    ... 
+&lt;/table&gt;</code></pre>
             </article>
         </div>
     </div>
