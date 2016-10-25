@@ -7,4 +7,4 @@ exclude:
     - %gitignore%  # This special entry will ask Couscous to read the exluded directories from your ".gitignore"  file
 
 # Base URL of the published website (no "/" at the end!)
-baseUrl: http://pascalkleindienst.github.io/consola.css
+baseUrl: https://pascalkleindienst.github.io/consola.css
