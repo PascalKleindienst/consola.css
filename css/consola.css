@@ -1312,11 +1312,11 @@ form .form-control {
 .radio {
   display: block;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  clear: both; }
   .checkbox label,
   .radio label {
-    margin-bottom: 0;
+    float: left;
+    margin-bottom: .5rem;
     cursor: pointer;
     min-height: 20px;
     font-weight: 400; }
@@ -1339,15 +1339,11 @@ form .form-control {
       visibility: hidden;
       margin: 0;
       padding: 0; }
-    .checkbox input[type='checkbox'] + label, .checkbox input[type='radio'] + label,
-    .radio input[type='checkbox'] + label,
-    .radio input[type='radio'] + label {
-      float: left; }
-      .checkbox input[type='checkbox'] + label::before, .checkbox input[type='radio'] + label::before,
-      .radio input[type='checkbox'] + label::before,
-      .radio input[type='radio'] + label::before {
-        float: right;
-        margin-left: 1rem; }
+    .checkbox input[type='checkbox'].position-right + label::before, .checkbox input[type='radio'].position-right + label::before,
+    .radio input[type='checkbox'].position-right + label::before,
+    .radio input[type='radio'].position-right + label::before {
+      float: right;
+      margin-left: 1rem; }
 
 .checkbox input[type='checkbox'] + label::before {
   content: '[ ]'; }
@@ -1364,8 +1360,6 @@ form .form-control {
 .form-control {
   border: 1px dashed #ecf0f1 !important;
   padding: .5rem .75rem .25rem; }
-  .form-control::-ms-expand {
-    display: none; }
   .form-control option {
     background: #2c3e50;
     color: #ecf0f1; }

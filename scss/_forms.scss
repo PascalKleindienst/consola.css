@@ -26,12 +26,12 @@ form {
 .radio {
   display: block;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  clear: both;
 
   // Label
   label {
-    margin-bottom: 0;
+    float: left;
+    margin-bottom: .5rem;
     cursor: pointer;
     min-height: 20px;
     font-weight: 400;
@@ -58,9 +58,7 @@ form {
       }
 
       // position label -> checkbox/radio
-      & + label {
-        float: left;
-
+      &.position-right + label {
         &::before {
           float: right;
           margin-left: 1rem;
