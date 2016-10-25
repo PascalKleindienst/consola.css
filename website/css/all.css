@@ -8,15 +8,6 @@
     display: block;
 }
 
-/** General */
-a {
-    color: #f1c40f;
-    text-decoration: none;
-}
-a:hover, a:focus, a::visited {
-    color: #aa8a0a;
-}
-
 /** Padding for bg-white **/
 .odd {
     padding: .1rem 0;
