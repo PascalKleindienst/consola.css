@@ -3,11 +3,11 @@ layout: documentation
 current_menu: grid-system
 ---
 
-# Responsive Grid System
+## Responsive Grid System
 
 consola.css comes with a responsive grid system based on `display: flex;` based on http://flexboxgrid.com
 
-## Example: Mobile and desktop
+### Example: Mobile and desktop
 
 <div class="container">
     <div class="row row-example">
@@ -35,7 +35,7 @@ consola.css comes with a responsive grid system based on `display: flex;` based 
 </div>
 ```
 
-## Example: Fluid container
+### Example: Fluid container
 Turn any fixed-width grid layout into a full-width layout by changing your outermost `.container` to `.container-fluid`.
 
 ```html
