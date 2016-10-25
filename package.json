@@ -6,6 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "consola",
+    "css",
+    "micro-framework",
+    "scss",
+    "minimal",
+    "console",
+    "cli"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PascalKleindienst/consola-css.git"
@@ -24,9 +33,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
-    "normalize.css": "^5.0.0"
-  },
-  "dependencies": {
+    "normalize.css": "^5.0.0",
     "flexboxgrid": "^6.3.1"
   }
 }
