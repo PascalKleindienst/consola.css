@@ -23,9 +23,9 @@ menu:
         code:
             section: Code
             items:
-                inline:
+                code-inline:
                     text: Inline
                     url: docs/code.html#inline
-                basic-block:
+                code-basic-block:
                     text: Basic block
                     url: docs/code.html#basic-block
