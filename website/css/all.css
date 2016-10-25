@@ -24,13 +24,6 @@
     font-size: 120%;
 }
 
-/** Reset pre for hljs */
- pre:not(.default-consola) {
-    background-color: none; 
-    padding: 0; 
-    font-size: 100%; 
-}
-
 /**
  * Content
  */
@@ -87,4 +80,24 @@ a.anchor {
 .row-example div {
     background: #3498db;
     border: 1px solid #1d6fa5;
+}
+.consola-example {
+    position: relative;
+    padding: 30px 15px 15px;
+}
+.consola-example::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Example: ";
+}
+
+pre:not(.default-consola) {
+    background-color: none; 
+    padding: 0; 
+    font-size: 100%; 
 }
