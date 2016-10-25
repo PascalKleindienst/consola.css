@@ -8,15 +8,6 @@
     display: block;
 }
 
-/** General */
-a {
-    color: #f1c40f;
-    text-decoration: none;
-}
-a:hover, a:focus, a::visited {
-    color: #aa8a0a;
-}
-
 /** Padding for bg-white **/
 .odd {
     padding: .1rem 0;
@@ -34,14 +25,45 @@ a:hover, a:focus, a::visited {
 }
 
 /** Reset pre for hljs */
- pre {
+ pre:not(.default-consola) {
     background-color: none; 
     padding: 0; 
     font-size: 100%; 
 }
 
+/**
+ * Content
+ */
+ article {
+     position: relative;
+ }
+ 
+a.anchor {
+    position: absolute;
+    left: 0;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity .3s; 
+}
+ h1:hover > a.anchor,
+ h3:hover > a.anchor,
+ h2:hover > a.anchor,
+ h4:hover > a.anchor,
+ h5:hover > a.anchor,
+ h6:hover > a.anchor {
+     opacity: 1;
+ }
+
 /** Footer **/
 #footer {
     margin: 4rem 0 2rem 0;
     text-align: center;
+}
+
+/**
+ * Examples
+ */
+.row-example div {
+    background: #3498db;
+    border: 1px solid #1d6fa5;
 }

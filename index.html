@@ -48,7 +48,7 @@
     </p>
 
     <p class="intro_btns">
-        <a href="#docs" class="btn btn-blue"><i class="fa fa-book"></i> Documentation</a>
+        <a href="docs/index" class="btn btn-blue"><i class="fa fa-book"></i> Documentation</a>
         <a href="https://github.com/PascalKleindienst/consola.css/archive/master.zip" class="btn btn-yellow"><i class="fa fa-download"></i> Download</a>
         <a href="https://github.com/PascalKleindienst/consola.css" class="btn btn-gree"><i class="fa fa-code"></i> Source Code</a>
     </p>
@@ -94,5 +94,12 @@ $red: #ff0000;
     </footer>
             <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+        var headings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
+        headings.forEach(function(el) {
+            var text = el.textContent || el.innerText;
+            el.innerHTML += '<a class="anchor" href="#'+ el.getAttribute('id') +'">#</a>';
+        });
+        </script>
     </body>
 </html>
