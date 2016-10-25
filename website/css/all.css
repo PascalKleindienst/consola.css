@@ -1,0 +1,47 @@
+/** Hero */
+.hero {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.hero h1 > small{
+    display: block;
+}
+
+/** General */
+a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+a:hover, a:focus, a::visited {
+    color: #aa8a0a;
+}
+
+/** Padding for bg-white **/
+.odd {
+    padding: .1rem 0;
+}
+
+/** Into Buttons **/
+.intro_btns {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+.intro_btns > .btn {
+    padding: .75rem 1.5rem;
+    font-size: 120%;
+}
+
+/** Reset pre for hljs */
+ pre {
+    background-color: none; 
+    padding: 0; 
+    font-size: 100%; 
+}
+
+/** Footer **/
+#footer {
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+}

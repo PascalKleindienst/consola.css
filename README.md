@@ -1,3 +1,6 @@
+---
+layout: home
+---
 # consola.css [![NPM][icon-npm]][link-npm] [![Bower][icon-bower]][link-bower] [![NPM Downloads][icon-npm-dt]][link-npm] [![license][icon-license]][link-license] [![Code Climate][icon-codeclimate]][link-codeclimate]
 consola.css is a lightweight CSS micro-framework for a console like style.
 

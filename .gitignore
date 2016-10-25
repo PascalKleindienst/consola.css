@@ -22,3 +22,7 @@ jspm_packages
 # sass
 .sass-cache/
 *.css.map
+
+# couscous
+/.couscous/
+/website/bower_components/

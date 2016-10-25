@@ -1,0 +1,10 @@
+# List of directories to exclude from the processing 
+exclude:
+    - vendor
+    - website
+    - src
+    - tests
+    - %gitignore%  # This special entry will ask Couscous to read the exluded directories from your ".gitignore"  file
+
+# Base URL of the published website (no "/" at the end!)
+baseUrl: http://pascalkleindienst.github.io/consola.css
