@@ -1294,7 +1294,8 @@ form .form-group {
   margin-bottom: 1rem; }
 
 form input,
-form textarea {
+form textarea,
+form .form-control {
   display: block;
   border: 0;
   background-color: transparent;
@@ -1303,7 +1304,8 @@ form textarea {
   color: #ecf0f1;
   font-family: "Inconsolata", "Lucida Console", Courier, monospace; }
   form input:focus,
-  form textarea:focus {
+  form textarea:focus,
+  form .form-control:focus {
     outline: 0; }
 
 .checkbox,
@@ -1358,6 +1360,15 @@ form textarea {
 
 .radio input[type='radio']:checked + label::before {
   content: '(\25CF)'; }
+
+.form-control {
+  border: 1px dashed #ecf0f1 !important;
+  padding: .5rem .75rem .25rem; }
+  .form-control::-ms-expand {
+    display: none; }
+  .form-control option {
+    background: #2c3e50;
+    color: #ecf0f1; }
 
 label {
   display: inline-block;

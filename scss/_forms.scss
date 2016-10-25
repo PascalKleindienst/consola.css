@@ -5,7 +5,8 @@ form {
   }
 
   input,
-  textarea {
+  textarea,
+  .form-control {
     display: block;
     border: 0;
     background-color: transparent;
@@ -98,6 +99,18 @@ form {
     }
   }
 }
+
+// select
+.form-control {
+  border: 1px dashed $dark-font-color !important;
+  padding: .5rem .75rem .25rem;
+
+  option {
+    background: $dark-background;
+    color: $dark-font-color;
+  }
+}
+
 
 // Labels
 label {
