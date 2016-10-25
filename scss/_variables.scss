@@ -25,5 +25,5 @@ $dark-background: $gray !default;
 $dark-font-color: $white !default;
 
 // Code
-$code-color: $blue !default;
-$code-bg:    $white !default;
+$code-color: darken($green, 15%) !default;
+$code-bg:    darken($gray, 15%) !default;
