@@ -29,3 +29,16 @@ menu:
                 code-basic-block:
                     text: Basic block
                     url: docs/code.html#basic-block
+
+        tables:
+            section: Tables
+            items:
+                table-basic:
+                    text: Basic Example
+                    url: docs/tables.html#basic-example
+                table-bordered:
+                    text: Bordered Table
+                    url: docs/tables.html#bordered-table
+                table-grid:
+                    text: Grid Table
+                    url: docs/tables.html#grid-table
