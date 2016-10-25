@@ -1,7 +1,7 @@
 # consola.css [![NPM][icon-npm]][link-npm] [![Bower][icon-bower]][link-bower] [![NPM Downloads][icon-npm-dt]][link-npm] [![license][icon-license]][link-license] [![Code Climate][icon-codeclimate]][link-codeclimate]
 consola.css is a lightweight CSS micro-framework for a console like style.
 
-It is very minimalistic and has therefore a small footprint of only **3.78 kB gzipped**.
+It is very minimalistic and has therefore a small footprint of only **4.15 kB gzipped**.
 It also includes SCSS and CSS files and comes with a gulpfile for customizing the build.
 
 ## Installation
