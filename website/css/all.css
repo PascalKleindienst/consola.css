@@ -25,7 +25,7 @@
 }
 
 /** Reset pre for hljs */
- pre.reset {
+ pre:not(.default-consola) {
     background-color: none; 
     padding: 0; 
     font-size: 100%; 
