@@ -1,8 +1,8 @@
 /**
  * consola.css - A lightweight CSS micro-framework for a console like style
  * @author Pascal Kleindienst
- * @version v0.1.1
- * @link https://github.com/PascalKleindienst/consola-css#readme
+ * @version v0.2.0
+ * @link https://github.com/PascalKleindienst/consola.css#readme
  * @license MIT
  */
 
@@ -1116,6 +1116,16 @@ hr {
 .container {
   max-width: 60rem;
   box-sizing: border-box; }
+  .container .row {
+    margin: 0; }
+
+a {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  text-decoration: none;
+  color: #f1c40f; }
+  a:hover, a:focus, a:active {
+    color: #aa8a0a; }
 
 html {
   font-size: 12px; }
@@ -1379,9 +1389,9 @@ label {
     width: 83.33333333%; } }
 
 code, pre {
-  background-color: #ecf0f1;
+  background-color: #11181f;
   padding: 2px 4px;
-  color: #3498db;
+  color: #208e4e;
   font-size: 90%; }
 
 pre {

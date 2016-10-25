@@ -1,6 +1,6 @@
 {
   "name": "consola.css",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A lightweight CSS micro-framework for a console like style",
   "main": "css/consola.css",
   "scripts": {
@@ -17,14 +17,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PascalKleindienst/consola-css.git"
+    "url": "git+https://github.com/PascalKleindienst/consola.css.git"
   },
   "author": "Pascal Kleindienst",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PascalKleindienst/consola-css/issues"
+    "url": "https://github.com/PascalKleindienst/consola.css/issues"
   },
-  "homepage": "https://github.com/PascalKleindienst/consola-css#readme",
+  "homepage": "https://github.com/PascalKleindienst/consola.css#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",

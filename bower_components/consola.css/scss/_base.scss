@@ -6,4 +6,20 @@ hr {
 .container {
   max-width: $viewport-xl;
   box-sizing: border-box;
+
+  .row {
+    margin: 0; // fix
+  }
+}
+
+a {
+  transition: color .3s;
+  text-decoration: none;
+  color: $yellow;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($yellow, 15%);
+  }
 }
