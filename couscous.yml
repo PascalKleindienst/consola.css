@@ -9,3 +9,23 @@ exclude:
 
 # Base URL of the published website (no "/" at the end!)
 baseUrl: https://pascalkleindienst.github.io/consola.css
+
+# menu-items
+menu:
+    items:
+        grid:
+            section: Grid
+            items:
+                grid-system:
+                    text: Responsive Grid System
+                    url: docs/grid-system.html
+
+        code:
+            section: Code
+            items:
+                inline:
+                    text: Inline
+                    url: docs/code.html#inline
+                basic-block:
+                    text: Basic block
+                    url: docs/code.html#basic-block

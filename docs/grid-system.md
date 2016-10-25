@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: documentation
+current_menu: grid-system
 ---
 
 # Responsive Grid System

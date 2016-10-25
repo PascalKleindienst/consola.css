@@ -54,6 +54,27 @@ a.anchor {
      opacity: 1;
  }
 
+ /* Sidebar */
+ .sidebar ul{
+    padding: 0;
+ }
+
+ .sidebar ul li {
+     margin-bottom: 20px;
+ }
+ .sidebar ul li ul {
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px;
+ }
+ .sidebar ul li ul  li {
+    margin-bottom: 5px;
+ }
+.sidebar ul li ul li.active  {
+    text-decoration: underline;
+}
+
 /** Footer **/
 #footer {
     margin: 4rem 0 2rem 0;
