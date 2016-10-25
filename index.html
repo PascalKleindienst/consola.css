@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Consola.css</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/consola.css" rel="stylesheet">
-        <style>
-            .hero {
-                text-align: center;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
-            .hero h1 > small{
-                display: block;
-            }
-            a {
-                text-decoration: none;
-            }
-        </style>
+<head>
+    <title>Consola.css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link href="http://pascalkleindienst.github.io/consola.css/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="http://pascalkleindienst.github.io/consola.css/bower_components/consola.css/css/consola.min.css" rel="stylesheet" />
+        <link href="http://pascalkleindienst.github.io/consola.css/css/hljs.atom-one-dark.css" rel="stylesheet" />
+        <link href="http://pascalkleindienst.github.io/consola.css/css/all.css" rel="stylesheet" />
     </head>
-    <body>
-        <a href="https://github.com/PascalKleindienst/consola.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+<body>
+    <a href="https://github.com/PascalKleindienst/consola.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+        <div class="home">
         <header class="container-fluid hero bg-white">
             <h1>
                 consola.css
@@ -44,254 +37,62 @@
                     <img src="https://img.shields.io/codeclimate/github/PascalKleindienst/consola.css.svg?style=flat-square" alt="Code Climate" />
                 </a>
             </p>
-
         </header>
+
+        <section class="container-fluid">
+            <article id="home_intro" class="container">
+    <p>consola.css is a lightweight CSS micro-framework for a console like style.</p>
+    <p>
+        It is very minimalistic and has therefore a small footprint of only <strong>4.15 kB gzipped</strong>. 
+        It also includes SCSS and CSS files and comes with a gulpfile for customizing the build.
+    </p>
+
+    <p class="intro_btns">
+        <a href="#docs" class="btn btn-blue"><i class="fa fa-book"></i> Documentation</a>
+        <a href="https://github.com/PascalKleindienst/consola.css/archive/master.zip" class="btn btn-yellow"><i class="fa fa-download"></i> Download</a>
+        <a href="https://github.com/PascalKleindienst/consola.css" class="btn btn-gree"><i class="fa fa-code"></i> Source Code</a>
+    </p>
+</article>        </section>
+
+        <section class="container-fluid bg-white odd">
+            <article id="home_install" class="container">
+    <h2>Installation</h2>
+    
+    <p>Via bower</p>
+    <pre><code class="Bash">$ bower install --save consola.css</code></pre>
+
+    <p>Via npm</p>
+    <pre><code class="Bash">$ npm install --save consola.css</code></pre>
+
+    <h3>CSS</h3>
+    <p>Just add a <code>&lt;link&gt;</code> in your <code>&lt;head&gt;</code> of either <code>consola.css</code> or the minified version <code>consola.min.css</code>.</p>
+</article>        </section>
+
+        <section class="container-fluid">
+            <article id="home_customization" class="container">
+    <h2>Customization</h2>
+    <p>In your SCSS file, you can import consola.css:</p>
+    <pre><code class="scss">@import "/path/to/consola.css/scss/consola";</code></pre>
+
+    <p>Variables are stored in the <code>scss/_variables.scss</code> file, so they can be easily customized:</p>
+    <pre><code class="scss">$font-size: 14px;
+$red: #ff0000;
+
+@import "/path/to/consola.css/scss/consola";</code></pre>
+</article>        </section>
+    </div>
+
+
+    <footer id="footer">
         <div class="container">
-            <!--<h3>Typography</h3>-->
-            <!--<h4>Headings</h4>
             <p>
-                All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, 
-                for when you want to match the font styling of a heading but still want your text to be displayed inline.
+                By <a href="https://github.com/PascalKleindienst/">Pascal Kleindienst</a>
+                |
+                Website generated with <a href="http://couscous.io" target="_blank">Couscous</a>.
             </p>
-            
-            <h1>h1. heading</h1>
-            <h2>h2. heading</h2>
-            <h3>h3. heading</h3>
-            <h4>h4. heading</h4>
-            <h5>h5. heading</h5>
-            <h6>h6. heading</h6>
-            
-    <pre>&lt;h1&gt;h1. heading&lt;/h1&gt;
-    &lt;h2&gt;h2. heading&lt;/h2&gt;
-    &lt;h3&gt;h3. heading&lt;/h3&gt;
-    &lt;h4&gt;h4. heading&lt;/h4&gt;
-    &lt;h5&gt;h5. heading&lt;/h5&gt;
-    &lt;h6&gt;h6. heading&lt;/h6&gt;
-    </pre>-->
-            
-            <!--<hr />-->
-            <h3>Code</h3>
-            <h4>Inline</h4>
-            <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
-            <pre>&lt;code&gt;Some code..&lt;/code&gt;</pre>
-
-            <h4>Basic block</h4>
-            <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
-            <pre>&lt;pre&gt;Sample code here...&lt;/pre&gt;</pre>
-            
-            <hr />
-
-            <h3>Forms</h3>
-            <form action="#" role="form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Enter your name...">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name"email"="" placeholder="user@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="8 characters or more...">
-                </div>
-                <div class="form-group">
-                    <p>Elements on the left</p>
-                    <div class="checkbox">
-                        <input type="checkbox" value="" id="optionCheckbox">
-                        <label for="optionCheckbox">
-                            Option one is this and that&mdash;be sure to include why it's great
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        <label for="optionsRadios1">
-                            Option one is this and that&mdash;be sure to include why it's great
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-                        <label for="optionsRadios2">
-                                Option two can be something else and selecting it will deselect option one
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <p>Elements on the right</p>
-                    <div class="checkbox">
-                        <input class="position-right" type="checkbox" value="" id="optionCheckboxRight">
-                        <label for="optionCheckboxRight">
-                            Option one is this and that&mdash;be sure to include why it's great
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input class="position-right" type="radio" name="optionsRadiosRight" id="optionsRadiosRight" value="option1" checked>
-                        <label for="optionsRadiosRight">
-                            Option one is this and that&mdash;be sure to include why it's great
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="select">Dropdown</label>
-                    <select id="select" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="selectMultiple">Select Multiple</label>
-                    <select multiple id="selectMultiple" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" rows="3" placeholder="Your message to us..."></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Submit" class="btn btn-blue">
-                </div>
-            </form>
-
-            <h3>Buttons</h3>
-            <p>
-                <a href="#" class="btn">.btn</a>
-                <a href="#" class="btn btn-red">.btn-red</a>
-                <a href="#" class="btn btn-green">.btn-green</a>
-                <a href="#" class="btn btn-yellow">.btn-yellow</a>
-                <a href="#" class="btn btn-blue">.btn-blue</a>
-                <a href="#" class="btn btn-link">.btn-link</a>
-            </p>
-
-            <hr />
-
-            <h3>Lists</h3>
-            <h4>Ordered</h4>
-            <ol>
-                <li>Apples</li>
-                <li>Bananas</li>
-                <li>Oranges</li>
-            </ol>
-
-            <h4>Unordered</h4>
-            <ul>
-                <li>Apples</li>
-                <li>Bananas</li>
-                <li>Citrus
-                    <ul>
-                        <li>Limes</li>
-                        <li>Oranges</li>
-                        <li>Grapefruit</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h4>Unordered dash</h4>
-            <ul class="list-dash">
-                <li>Apples</li>
-                <li>Bananas</li>
-                <li>Citrus
-                    <ul>
-                        <li>Limes</li>
-                        <li>Oranges</li>
-                        <li>Grapefruit</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h4>Unstyled</h4>
-            <ul class="list-unstyled">
-                <li>Apples</li>
-                <li>Bananas</li>
-                <li>Oranges</li>
-            </ul>
-
-            <h3>Tables</h3>
-            <h4>Basic example</h4>
-            <table class="table">
-                <caption>Optional table caption.</caption>
-                <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead>
-                <tbody> 
-                    <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr>
-                    <tr><th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr>
-                    <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr>
-                </tbody>
-            </table>
-            <pre>&lt;table class="table"&gt; ... &lt;/table&gt;</pre>
-
-            <h4>Bordered example</h4>
-            <table class="table table-bordered">
-                <caption>Optional table caption.</caption>
-                <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead>
-                <tbody> 
-                    <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr>
-                    <tr><th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr>
-                    <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr>
-                </tbody>
-            </table>
-            <pre>&lt;table class="table table-bordered"&gt; ... &lt;/table&gt;</pre>
-
-            <h4>Grid example</h4>
-            <table class="table table-grid">
-                <caption>Optional table caption.</caption>
-                <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead>
-                <tbody> 
-                    <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr>
-                    <tr><th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr>
-                    <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr>
-                </tbody>
-            </table>
-            <pre>&lt;table class="table table-grid"&gt; ... &lt;/table&gt;</pre>
-            
-            <hr />
-
-            <h3>Helper Classes</h3>
-            <h4>Contextual colors</h4>
-            <p class="text-red">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-            <p class="text-green">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p class="text-yellow">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <p class="text-blue">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    <pre>&lt;p class="text-red"&gt; ...  &lt;/p&gt;
-    &lt;p class="text-green"&gt; ...  &lt;/p&gt;
-    &lt;p class="text-yellow"&gt; ...  &lt;/p&gt;
-    &lt;p class="text-blue"&gt; ...  &lt;/p&gt;</pre>
-
-            <h4>Background colors</h4>
-            <p class="bg-red">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-            <p class="bg-green">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p class="bg-yellow">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <p class="bg-blue">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    <pre>&lt;p class="bg-red"&gt; ...  &lt;/p&gt;
-    &lt;p class="bg-green"&gt; ...  &lt;/p&gt;
-    &lt;p class="bg-yellow"&gt; ...  &lt;/p&gt;
-    &lt;p class="bg-blue"&gt; ...  &lt;/p&gt;</pre>
-            <hr />
-
-            <h4>Progress Bar</h4>
-            <p>Indeterminate:
-                <span class="progress progress-indeterminate">
-                    <span class="progress-bar" role="progressbar"></span>
-                </span>
-            </p>
-    <pre>&lt;span class="progress progress-indeterminate"&gt;
-        &lt;span class="progress-bar" role="progressbar"&gt;&lt;/span&gt;
-    &lt;/span&gt;</pre>
-
-            <p>Determinate:
-                <div class="progress" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" role="progressbar"  style="width: 60%;"></div>
-                </div>
-            </p>
-    <pre>&lt;div class="progress" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"&gt;
-        &lt;div class="progress-bar" role="progressbar" style="width: 60%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;</pre>
         </div>
+    </footer>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

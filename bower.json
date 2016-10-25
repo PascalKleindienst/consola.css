@@ -1,27 +1,8 @@
 {
-  "name": "consola.css",
-  "description": "consola.css is a lightweight CSS micro-framework for a console like style.",
-  "main": "css/consola.css",
-  "authors": [
-    "Pascal Kleindienst"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "consola",
-    "css",
-    "micro-framework",
-    "scss",
-    "minimal",
-    "console",
-    "cli"
-  ],
-  "homepage": "https://github.com/PascalKleindienst/consola.css",
-  "moduleType": [],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "name": "consola.css website",
+  "private": true,
+  "dependencies": {
+    "consola.css": "^0.2.0",
+    "fontawesome": "~4.0"
+  }
 }
