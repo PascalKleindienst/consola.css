@@ -31,8 +31,39 @@
     font-size: 100%; 
 }
 
+/**
+ * Content
+ */
+ article {
+     position: relative;
+ }
+ 
+a.anchor {
+    position: absolute;
+    left: 0;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity .3s; 
+}
+ h1:hover > a.anchor,
+ h3:hover > a.anchor,
+ h2:hover > a.anchor,
+ h4:hover > a.anchor,
+ h5:hover > a.anchor,
+ h6:hover > a.anchor {
+     opacity: 1;
+ }
+
 /** Footer **/
 #footer {
     margin: 4rem 0 2rem 0;
     text-align: center;
+}
+
+/**
+ * Examples
+ */
+.row-example div {
+    background: #3498db;
+    border: 1px solid #1d6fa5;
 }
