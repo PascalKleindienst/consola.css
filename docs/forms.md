@@ -134,11 +134,11 @@ layout: documentation
 
 #### Textarea
 <div class="consola-example">
-    <textarea class="form-control" rows="3"></textarea>
+    <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
 </div>
 
 ```html
-<textarea class="form-control" rows="3"></textarea>
+<textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
 ```
 
 #### Checkboxes and radios
