@@ -65,3 +65,13 @@ menu:
                 buttons-options:
                     text: Options
                     url: docs/buttons.html#options
+
+        helpers:
+            section: Helper Classes
+            items:
+                helpers-colors:
+                    text: Contextual Colors
+                    url: docs/helpers.html
+                helpers-backgrounds:
+                    text: Contextual Backgrounds
+                    url: docs/helpers.html#contextual-backgrounds
