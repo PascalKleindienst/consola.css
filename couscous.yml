@@ -25,7 +25,7 @@ menu:
             items:
                 code-inline:
                     text: Inline
-                    url: docs/code.html#inline
+                    url: docs/code.html
                 code-basic-block:
                     text: Basic block
                     url: docs/code.html#basic-block
@@ -35,7 +35,7 @@ menu:
             items:
                 table-basic:
                     text: Basic Example
-                    url: docs/tables.html#basic-example
+                    url: docs/tables.html
                 table-bordered:
                     text: Bordered Table
                     url: docs/tables.html#bordered-table
@@ -48,10 +48,20 @@ menu:
             items:
                 forms-basic:
                     text: Basic Example
-                    url: docs/forms.html#basic-example
+                    url: docs/forms.html
                 forms-horizontal:
                     text: Horizontal Form
                     url: docs/forms.html#horizontal-form
                 forms-controls:
                     text: Supported Controls
                     url: docs/forms.html#supported-controls
+
+        buttons:
+            section: Buttons
+            items:
+                buttons-tags:
+                    text: Button Tags
+                    url: docs/buttons.html
+                buttons-options:
+                    text: Options
+                    url: docs/buttons.html#options

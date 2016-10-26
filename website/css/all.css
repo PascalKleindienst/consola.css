@@ -96,6 +96,11 @@ a.anchor {
     content: "Example: ";
 }
 
+.consola-example .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 pre:not(.default-consola) {
     background-color: none; 
     padding: 0; 

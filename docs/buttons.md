@@ -20,7 +20,6 @@ layout: documentation
 
 <div class="consola-example">
     <p>
-        <a href="#" class="btn">.btn</a>
         <a href="#" class="btn btn-red">.btn-red</a>
         <a href="#" class="btn btn-magenta">.btn-magenta</a>
         <a href="#" class="btn btn-green">.btn-green</a>
@@ -28,11 +27,11 @@ layout: documentation
         <a href="#" class="btn btn-blue">.btn-blue</a>
         <a href="#" class="btn btn-cyan">.btn-cyan</a>
         <a href="#" class="btn btn-link">.btn-link</a>
+        <a href="#" class="btn">.btn</a>
     </p>
 </div>
 
 ```html
-<a href="#" class="btn">.btn</a>
 <a href="#" class="btn btn-red">.btn-red</a>
 <a href="#" class="btn btn-magenta">.btn-magenta</a>
 <a href="#" class="btn btn-green">.btn-green</a>
@@ -40,4 +39,5 @@ layout: documentation
 <a href="#" class="btn btn-blue">.btn-blue</a>
 <a href="#" class="btn btn-cyan">.btn-cyan</a>
 <a href="#" class="btn btn-link">.btn-link</a>
+<a href="#" class="btn">.btn</a>
 ```
