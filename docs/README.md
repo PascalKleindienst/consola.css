@@ -1,4 +1,4 @@
 ---
-layout: default
+layout: documentation
 ---
 Test
