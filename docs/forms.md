@@ -134,7 +134,7 @@ layout: documentation
 
 #### Textarea
 <div class="consola-example">
-    <input type="text" class="form-control" placeholder="Text input">
+    <textarea class="form-control" rows="3"></textarea>
 </div>
 
 ```html
