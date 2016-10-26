@@ -1,14 +1,19 @@
 .bg-red        { background-color: $red; }
 .bg-magenta    { background-color: $magenta; }
 .bg-green      { background-color: $green; }
-.bg-yellow     { background-color: $yellow; }
 .bg-blue       { background-color: $blue; }
 .bg-cyan       { background-color: $cyan; }
+
+.bg-yellow     {
+  background-color: $yellow;
+  color: $dark-background;
+}
 
 .bg-white      {
   background-color: $white;
   color: $dark-background;
 }
+
 
 .text-red        { color: $red; }
 .text-magenta    { color: $magenta; }
@@ -17,4 +22,3 @@
 .text-blue       { color: $blue; }
 .text-cyan       { color: $cyan; }
 .text-white      { color: $white; }
-.text-muted      { opacity: .7; }
