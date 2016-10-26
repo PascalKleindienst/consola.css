@@ -16,15 +16,19 @@ button {
   }
 
   &.btn-red,
+  &.btn-magenta,
   &.btn-green,
   &.btn-blue,
+  &.btn-cyan,
   &.btn-link {
     color: $white;
   }
 
   &.btn-red { @include btn-color($red); }
+  &.btn-magenta { @include btn-color($magenta); }
   &.btn-green { @include btn-color($green); }
   &.btn-yellow { @include btn-color($yellow); }
   &.btn-blue { @include btn-color($blue); }
+  &.btn-cyan { @include btn-color($cyan); }
   &.btn-link { @include btn-color(transparent); }
 }

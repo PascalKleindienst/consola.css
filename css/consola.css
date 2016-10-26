@@ -1,7 +1,7 @@
 /**
  * consola.css - A lightweight CSS micro-framework for a console like style
  * @author Pascal Kleindienst
- * @version v0.2.1
+ * @version v0.2.2
  * @link https://github.com/PascalKleindienst/consola.css#readme
  * @license MIT
  */
@@ -1139,6 +1139,9 @@ body {
 .bg-red {
   background-color: #e74c3c; }
 
+.bg-magenta {
+  background-color: #d80073; }
+
 .bg-green {
   background-color: #2ecc71; }
 
@@ -1148,6 +1151,9 @@ body {
 .bg-blue {
   background-color: #3498db; }
 
+.bg-cyan {
+  background-color: #00bcd4; }
+
 .bg-white, .btn,
 button {
   background-color: #ecf0f1;
@@ -1155,6 +1161,9 @@ button {
 
 .text-red {
   color: #e74c3c; }
+
+.text-magenta {
+  color: #d80073; }
 
 .text-green {
   color: #2ecc71; }
@@ -1164,6 +1173,9 @@ button {
 
 .text-blue {
   color: #3498db; }
+
+.text-cyan {
+  color: #00bcd4; }
 
 .text-white {
   color: #ecf0f1; }
@@ -1186,10 +1198,12 @@ button {
   button:hover {
     background-color: #a3b6bb;
     color: #ecf0f1; }
-  .btn.btn-red, .btn.btn-green, .btn.btn-blue, .btn.btn-link,
+  .btn.btn-red, .btn.btn-magenta, .btn.btn-green, .btn.btn-blue, .btn.btn-cyan, .btn.btn-link,
   button.btn-red,
+  button.btn-magenta,
   button.btn-green,
   button.btn-blue,
+  button.btn-cyan,
   button.btn-link {
     color: #ecf0f1; }
   .btn.btn-red,
@@ -1200,6 +1214,14 @@ button {
     button.btn-red:focus,
     button.btn-red:hover {
       background-color: #bf2718; }
+  .btn.btn-magenta,
+  button.btn-magenta {
+    background-color: #d80073; }
+    .btn.btn-magenta:active, .btn.btn-magenta:focus, .btn.btn-magenta:hover,
+    button.btn-magenta:active,
+    button.btn-magenta:focus,
+    button.btn-magenta:hover {
+      background-color: #8c004a; }
   .btn.btn-green,
   button.btn-green {
     background-color: #2ecc71; }
@@ -1224,6 +1246,14 @@ button {
     button.btn-blue:focus,
     button.btn-blue:hover {
       background-color: #1d6fa5; }
+  .btn.btn-cyan,
+  button.btn-cyan {
+    background-color: #00bcd4; }
+    .btn.btn-cyan:active, .btn.btn-cyan:focus, .btn.btn-cyan:hover,
+    button.btn-cyan:active,
+    button.btn-cyan:focus,
+    button.btn-cyan:hover {
+      background-color: #007888; }
   .btn.btn-link,
   button.btn-link {
     background-color: transparent; }
