@@ -2,7 +2,7 @@
   "name": "consola.css website",
   "private": true,
   "dependencies": {
-    "consola.css": "~0.2.0",
-    "fontawesome": "~4.0"
+    "fontawesome": "~4.0",
+    "consola.css": "^0.4.0"
   }
 }

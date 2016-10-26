@@ -1,8 +1,10 @@
+// Ruler
 hr {
   border: 0;
   border-bottom: 1px dashed $dark-font-color;
 }
 
+// Container
 .container {
   max-width: 100%;
   box-sizing: border-box;
@@ -12,10 +14,11 @@ hr {
   }
 }
 
+// Anchors
 a {
   transition: color .3s;
   text-decoration: none;
-  color: $yellow;
+  color: $dark-link-color;
 
   &:hover,
   &:focus,
