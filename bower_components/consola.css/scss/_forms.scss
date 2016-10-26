@@ -3,21 +3,31 @@ form {
   .form-group {
     margin-bottom: 1rem;
   }
+}
 
-  input,
-  textarea,
-  .form-control {
-    display: block;
-    border: 0;
-    background-color: transparent;
-    background-image: none;
-    width: 100%;
+// Control Elements like input, select, textarea
+.form-control {
+  display: block;
+  border: 0;
+  background-color: transparent;
+  background-image: none;
+  width: 100%;
+  color: $dark-font-color;
+  font-family: $font-family;
+
+  &:focus {
+    outline: 0;
+  }  
+}
+
+// Select
+select.form-control {
+  border: 1px dashed $dark-font-color !important;
+  padding: .5rem .75rem .25rem;
+
+  option {
+    background: $dark-background;
     color: $dark-font-color;
-    font-family: $font-family;
-
-    &:focus {
-      outline: 0;
-    }
   }
 }
 
@@ -32,7 +42,6 @@ form {
   label {
     float: left;
     margin-bottom: .5rem;
-    cursor: pointer;
     min-height: 20px;
     font-weight: 400;
   }
@@ -58,7 +67,7 @@ form {
       }
 
       // position label -> checkbox/radio
-      &.position-right + label {
+      &.control-right + label {
         &::before {
           float: right;
           margin-left: 1rem;
@@ -98,24 +107,13 @@ form {
   }
 }
 
-// select
-.form-control {
-  border: 1px dashed $dark-font-color !important;
-  padding: .5rem .75rem .25rem;
-
-  option {
-    background: $dark-background;
-    color: $dark-font-color;
-  }
-}
-
-
 // Labels
 label {
   display: inline-block;
   margin-bottom: 5px;
   max-width: 100%;
   font-weight: 700;
+  cursor: pointer;
 }
 
 // Responsive Horizontal form
@@ -125,6 +123,14 @@ label {
       float: left;
       margin-bottom: 0;
       width: 16.66666667%;
+    }
+
+    .checkbox,
+    .radio {
+      label {
+        float: none;
+        width: 100%;
+      }
     }
 
     input {

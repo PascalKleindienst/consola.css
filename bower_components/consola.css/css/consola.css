@@ -1,7 +1,7 @@
 /**
  * consola.css - A lightweight CSS micro-framework for a console like style
  * @author Pascal Kleindienst
- * @version v0.2.0
+ * @version v0.2.1
  * @link https://github.com/PascalKleindienst/consola.css#readme
  * @license MIT
  */
@@ -1114,7 +1114,7 @@ hr {
   border-bottom: 1px dashed #ecf0f1; }
 
 .container {
-  max-width: 60rem;
+  max-width: 100%;
   box-sizing: border-box; }
   .container .row {
     margin: 0; }
@@ -1128,15 +1128,7 @@ a {
     color: #aa8a0a; }
 
 html {
-  font-size: 12px; }
-
-@media screen and (min-width: 32rem) and (max-width: 48rem) {
-  html {
-    font-size: 15px; } }
-
-@media screen and (min-width: 48rem) {
-  html {
-    font-size: 16px; } }
+  font-size: 16px; }
 
 body {
   background: #2c3e50;
@@ -1303,9 +1295,7 @@ ul:not(.list-unstyled) {
 form .form-group {
   margin-bottom: 1rem; }
 
-form input,
-form textarea,
-form .form-control {
+.form-control {
   display: block;
   border: 0;
   background-color: transparent;
@@ -1313,10 +1303,15 @@ form .form-control {
   width: 100%;
   color: #ecf0f1;
   font-family: "Inconsolata", "Lucida Console", Courier, monospace; }
-  form input:focus,
-  form textarea:focus,
-  form .form-control:focus {
+  .form-control:focus {
     outline: 0; }
+
+select.form-control {
+  border: 1px dashed #ecf0f1 !important;
+  padding: .5rem .75rem .25rem; }
+  select.form-control option {
+    background: #2c3e50;
+    color: #ecf0f1; }
 
 .checkbox,
 .radio {
@@ -1327,7 +1322,6 @@ form .form-control {
   .radio label {
     float: left;
     margin-bottom: .5rem;
-    cursor: pointer;
     min-height: 20px;
     font-weight: 400; }
   .checkbox input[type='checkbox'], .checkbox input[type='radio'],
@@ -1349,9 +1343,9 @@ form .form-control {
       visibility: hidden;
       margin: 0;
       padding: 0; }
-    .checkbox input[type='checkbox'].position-right + label::before, .checkbox input[type='radio'].position-right + label::before,
-    .radio input[type='checkbox'].position-right + label::before,
-    .radio input[type='radio'].position-right + label::before {
+    .checkbox input[type='checkbox'].control-right + label::before, .checkbox input[type='radio'].control-right + label::before,
+    .radio input[type='checkbox'].control-right + label::before,
+    .radio input[type='radio'].control-right + label::before {
       float: right;
       margin-left: 1rem; }
 
@@ -1367,24 +1361,22 @@ form .form-control {
 .radio input[type='radio']:checked + label::before {
   content: '(\25CF)'; }
 
-.form-control {
-  border: 1px dashed #ecf0f1 !important;
-  padding: .5rem .75rem .25rem; }
-  .form-control option {
-    background: #2c3e50;
-    color: #ecf0f1; }
-
 label {
   display: inline-block;
   margin-bottom: 5px;
   max-width: 100%;
-  font-weight: 700; }
+  font-weight: 700;
+  cursor: pointer; }
 
 @media (min-width: 48rem) {
   .form-horizontal label {
     float: left;
     margin-bottom: 0;
     width: 16.66666667%; }
+  .form-horizontal .checkbox label,
+  .form-horizontal .radio label {
+    float: none;
+    width: 100%; }
   .form-horizontal input {
     width: 83.33333333%; } }
 
