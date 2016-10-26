@@ -17,7 +17,7 @@ form {
 
   &:focus {
     outline: 0;
-  }  
+  }
 }
 
 // Select
@@ -82,11 +82,11 @@ select.form-control {
   input {
     &[type='checkbox'] {
       & + label::before {
-        content: '[ ]';
+        content: $form-checkbox-content;
       }
 
       &:checked + label::before {
-        content: '[X]';
+        content: $form-checkbox-checked-content;
       }
     }
   }
@@ -97,11 +97,11 @@ select.form-control {
   input {
     &[type='radio'] {
       & + label::before {
-        content: '( )';
+        content: $form-radio-content;
       }
 
       &:checked + label::before {
-        content: '(\25CF)';
+        content: $form-radio-checked-content;
       }
     }
   }

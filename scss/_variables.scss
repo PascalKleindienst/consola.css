@@ -26,3 +26,9 @@ $dark-link-color: $yellow !default;
 // Code
 $code-color: darken($green, 15%) !default;
 $code-bg:    darken($gray, 15%) !default;
+
+// Forms
+$form-checkbox-content:         '[ ]' !default;
+$form-checkbox-checked-content: '[X]' !default;
+$form-radio-content:            '( )' !default;
+$form-radio-checked-content:    '(\25CF)' !default;
