@@ -1,11 +1,12 @@
 /**
  * consola.css - A lightweight CSS micro-framework for a console like style
  * @author Pascal Kleindienst
- * @version v0.3.0
+ * @version v0.4.0
  * @link https://github.com/PascalKleindienst/consola.css#readme
  * @license MIT
  */
 
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -1136,6 +1137,79 @@ body {
   font-family: "Inconsolata", "Lucida Console", Courier, monospace;
   font-weight: 400; }
 
+p,
+.p {
+  margin-bottom: 1.3rem;
+  font-size: 1rem; }
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  margin: 1.414rem 0 .5rem;
+  line-height: 1.42;
+  font-weight: inherit; }
+
+h1,
+.h1 {
+  margin-top: 0;
+  font-size: 3.998rem; }
+
+h2,
+.h2 {
+  font-size: 2.827rem; }
+
+h3,
+.h3 {
+  font-size: 1.999rem; }
+
+h4,
+.h4 {
+  font-size: 1.414rem; }
+
+h5,
+.h5 {
+  font-size: 1.121rem; }
+
+h6,
+.h6 {
+  font-size: .88rem; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-nowrap {
+  white-space: nowrap; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-capitalize {
+  text-transform: capitalize; }
+
+small,
+.text-small {
+  font-size: .707em; }
+
+.text-muted {
+  opacity: .7; }
+
 .bg-red {
   background-color: #e74c3c; }
 
@@ -1145,14 +1219,15 @@ body {
 .bg-green {
   background-color: #2ecc71; }
 
-.bg-yellow {
-  background-color: #f1c40f; }
-
 .bg-blue {
   background-color: #3498db; }
 
 .bg-cyan {
   background-color: #00bcd4; }
+
+.bg-yellow {
+  background-color: #f1c40f;
+  color: #2c3e50; }
 
 .bg-white, .btn,
 button {
@@ -1180,18 +1255,17 @@ button {
 .text-white {
   color: #ecf0f1; }
 
-.text-muted {
-  opacity: .7; }
-
 .btn,
 button {
+  display: inline-block;
   -webkit-transition: color .3s, background-color .3s;
   transition: color .3s, background-color .3s;
   border: 0;
   cursor: pointer;
   padding: .5rem 1rem;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  white-space: nowrap; }
   .btn:active, .btn:focus, .btn:hover,
   button:active,
   button:focus,
@@ -1380,16 +1454,16 @@ select.form-control {
       margin-left: 1rem; }
 
 .checkbox input[type='checkbox'] + label::before {
-  content: '[ ]'; }
+  content: "[ ]"; }
 
 .checkbox input[type='checkbox']:checked + label::before {
-  content: '[X]'; }
+  content: "[X]"; }
 
 .radio input[type='radio'] + label::before {
-  content: '( )'; }
+  content: "( )"; }
 
 .radio input[type='radio']:checked + label::before {
-  content: '(\25CF)'; }
+  content: "(●)"; }
 
 label {
   display: inline-block;
