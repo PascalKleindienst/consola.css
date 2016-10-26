@@ -21,6 +21,7 @@ $font-family: 'Inconsolata', 'Lucida Console', Courier, monospace !default;
 // Dark Theme (default)
 $dark-background: $gray !default;
 $dark-font-color: $white !default;
+$dark-link-color: $yellow !default;
 
 // Code
 $code-color: darken($green, 15%) !default;
