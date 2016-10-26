@@ -1,6 +1,6 @@
 {
   "name": "consola.css",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A lightweight CSS micro-framework for a console like style",
   "main": "css/consola.css",
   "scripts": {
