@@ -42,3 +42,16 @@ menu:
                 table-grid:
                     text: Grid Table
                     url: docs/tables.html#grid-table
+
+        forms:
+            section: Forms
+            items:
+                forms-basic:
+                    text: Basic Example
+                    url: docs/forms.html#basic-example
+                forms-horizontal:
+                    text: Horizontal Form
+                    url: docs/forms.html#horizontal-form
+                forms-controls:
+                    text: Supported Controls
+                    url: docs/forms.html#supported-controls
