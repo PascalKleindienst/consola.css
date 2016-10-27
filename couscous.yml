@@ -20,6 +20,25 @@ menu:
                     text: Responsive Grid System
                     url: docs/grid-system.html
 
+        typography:
+            section: Typography
+            items:
+                typography-headings:
+                    text: Headings
+                    url: docs/typography.html
+                typography-inline-text-elements:
+                    text: Inline Text Elements
+                    url: docs/typography.html#inline-text-elements
+                typography-alignment-classes:
+                    text: Alignment Classes
+                    url: docs/typography.html#alignment-classes
+                typography-transformation-classes:
+                    text: Transformation Classes
+                    url: docs/typography.html#transformation-classes
+                typography-lists:
+                    text: Lists
+                    url: docs/typography.html#lists
+         
         code:
             section: Code
             items:
