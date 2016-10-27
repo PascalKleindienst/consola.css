@@ -3,6 +3,6 @@
   "private": true,
   "dependencies": {
     "fontawesome": "~4.0",
-    "consola.css": "^0.3.0"
+    "consola.css": "^0.4.0"
   }
 }
