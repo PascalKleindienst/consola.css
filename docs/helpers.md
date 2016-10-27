@@ -5,6 +5,7 @@ layout: documentation
 
 ### Contextual colors
 <div class="consola-example">
+    <p class="text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
     <p class="text-red">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
     <p class="text-magenta">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
     <p class="text-green">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
@@ -14,6 +15,7 @@ layout: documentation
 </div>
 
 ```html
+<p class="text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
 <p class="text-red">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
 <p class="text-magenta">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 <p class="text-green">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
