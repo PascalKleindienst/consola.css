@@ -7,6 +7,18 @@
 .hero h1 > small{
     display: block;
 }
+.hero h1 > a {
+    color: inherit;
+}
+@media only screen and (max-width: 48em) {
+    .hero h1 { font-size: 2rem; }
+    .hero h1 > small { font-size: 1.25rem; }
+}
+
+@media only screen and (max-width: 32em) {
+    .hero h1 { font-size: 1.25rem; }
+    .hero h1 > small { font-size: 0.75rem; }
+}
 
 /** Padding for bg-white **/
 .odd {
@@ -67,6 +79,11 @@ a.anchor {
 .sidebar ul li ul li.active  {
     text-decoration: underline;
 }
+
+/*@media only screen and (min-width: 48em) {
+    .sidebar { position: fixed; }
+    .sidebar + article { margin-left: 33.33333333%; }
+}*/
 
 /** Footer **/
 #footer {
