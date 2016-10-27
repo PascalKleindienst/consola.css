@@ -179,21 +179,149 @@
             </div>
 
             <article class="col-sm-8">
-                <h2 id="installation">Installation</h2>
-<p>Via bower</p>
-<pre><code class="language-Bash">$ bower install --save consola.css</code></pre>
-<p>Via npm</p>
-<pre><code class="language-Bash">$ npm install --save consola.css</code></pre>
-<p>Via git</p>
-<pre><code class="language-Bash">$ git clone git@github.com:PascalKleindienst/consola.css.git</code></pre>
-<h2 id="customization">Customization</h2>
-<p>In your SCSS file, you can import consola.css:</p>
-<pre><code class="language-scss">@import "/path/to/consola.css/scss/consola";</code></pre>
-<p>Variables are stored in the <code>scss/_variables.scss</code> file, so they can be easily customized:</p>
-<pre><code class="language-scss">$font-size: 14px;
-$red: #ff0000;
-
-@import "/path/to/consola.css/scss/consola";</code></pre>
+                <h2 id="typography">Typography</h2>
+<h3 id="headings">Headings</h3>
+<p>All styles of HTML headings, <code>&lt;h1&gt;</code> through  <code>&lt;h6&gt;</code>, are also available
+as classes <code>.h1</code> through <code>.h6</code></p>
+<div class="consola-example">
+    <p>
+        <span class="h1">.h1</span>
+        <span class="h2">.h2</span>
+        <span class="h3">.h3</span>
+        <span class="h4">.h4</span>
+        <span class="h5">.h5</span>
+        <span class="h6">.h6</span>
+    </p>
+</div>
+<pre><code class="language-HTML">&lt;span class="h1"&gt;.h1&lt;/span&gt;
+&lt;span class="h2"&gt;.h2&lt;/span&gt;
+&lt;span class="h3"&gt;.h3&lt;/span&gt;
+&lt;span class="h4"&gt;.h4&lt;/span&gt;
+&lt;span class="h5"&gt;.h5&lt;/span&gt;
+&lt;span class="h6"&gt;.h6&lt;/span&gt;</code></pre>
+<h3 id="inline-text-elements">Inline text elements</h3>
+<h4 id="marked-text">Marked text</h4>
+<div class="consola-example">
+    Some <mark>marked</mark> text
+</div>
+<pre><code class="language-HTML">Some &lt;mark&gt;marked&lt;/mark&gt; text</code></pre>
+<h4 id="deleted-text">Deleted text</h4>
+<div class="consola-example">
+    Some <del>deleted</del> text
+</div>
+<pre><code class="language-HTML">Some &lt;del&gt;deleted&lt;/del&gt; text</code></pre>
+<h4 id="strikethrough-text">Strikethrough text</h4>
+<div class="consola-example">
+    Some <s>strikethrough</s> text
+</div>
+<pre><code class="language-HTML">Some &lt;s&gt;strikethrough&lt;/s&gt; text</code></pre>
+<h4 id="underlined-text">Underlined text</h4>
+<div class="consola-example">
+    Some <u>underlined</u> text
+</div>
+<pre><code class="language-HTML">Some &lt;u&gt;underlined&lt;/u&gt; text</code></pre>
+<h4 id="small-text">Small text</h4>
+<div class="consola-example">
+    Some <small>small</small> text
+</div>
+<pre><code class="language-HTML">Some &lt;small&gt;small&lt;/small&gt; text</code></pre>
+<h4 id="bold">Bold</h4>
+<div class="consola-example">
+    Some <strong>bold</strong> text
+</div>
+<pre><code class="language-HTML">Some &lt;strong&gt;bold&lt;/strong&gt; text</code></pre>
+<h4 id="italics">Italics</h4>
+<div class="consola-example">
+    Some <em>italicized</em> text
+</div>
+<pre><code class="language-HTML">Some &lt;em&gt;italicized&lt;/em&gt; text</code></pre>
+<h3 id="alignment-classes">Alignment classes</h3>
+<div class="consola-example">
+    <p class="text-left">Left aligned text.</p>
+    <p class="text-center">Center aligned text.</p>
+    <p class="text-right">Right aligned text.</p>
+    <p class="text-justify">Justified text.</p>
+    <p class="text-nowrap">No wrap text.</p>
+</div>
+<pre><code class="language-HTML">&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
+&lt;p class="text-justify"&gt;Justified text.&lt;/p&gt;
+&lt;p class="text-nowrap"&gt;No wrap text.&lt;/p&gt;</code></pre>
+<h3 id="transformation-classes">Transformation classes</h3>
+<div class="consola-example">
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <p class="text-capitalize">Capitalized text.</p>
+</div>
+<pre><code class="language-HTML">&lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
+&lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+&lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;</code></pre>
+<h3 id="lists">Lists</h3>
+<h4 id="ordered">Ordered</h4>
+<div class="consola-example">
+    <ol><li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+    </ol></div>
+<pre><code class="language-HTML">&lt;ol&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Bananas&lt;/li&gt;
+    &lt;li&gt;Oranges&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<h4 id="unorderd">Unorderd</h4>
+<div class="consola-example">
+    <ul><li>Apples</li>
+        <li>Bananas</li>
+        <li>Citrus
+            <ul><li>Limes</li>
+                <li>Oranges</li>
+                <li>Grapefruit</li>
+            </ul></li>
+    </ul></div>
+<pre><code class="language-HTML">&lt;ul&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Bananas&lt;/li&gt;
+    &lt;li&gt;Citrus
+        &lt;ul&gt;
+            &lt;li&gt;Limes&lt;/li&gt;
+            &lt;li&gt;Oranges&lt;/li&gt;
+            &lt;li&gt;Grapefruit&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<h4 id="unorderd-dash">Unorderd Dash</h4>
+<div class="consola-example">
+    <ul class="list-dash"><li>Apples</li>
+        <li>Bananas</li>
+        <li>Citrus
+            <ul><li>Limes</li>
+                <li>Oranges</li>
+                <li>Grapefruit</li>
+            </ul></li>
+    </ul></div>
+<pre><code class="language-HTML">&lt;ul class="list-dash"&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Bananas&lt;/li&gt;
+    &lt;li&gt;Citrus
+        &lt;ul&gt;
+            &lt;li&gt;Limes&lt;/li&gt;
+            &lt;li&gt;Oranges&lt;/li&gt;
+            &lt;li&gt;Grapefruit&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<h4 id="unstyled">Unstyled</h4>
+<div class="consola-example">
+    <ul class="list-unstyled"><li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+    </ul></div>
+<pre><code class="language-HTML">&lt;ul class="list-unstyled"&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Bananas&lt;/li&gt;
+    &lt;li&gt;Oranges&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </article>
         </div>
     </div>
