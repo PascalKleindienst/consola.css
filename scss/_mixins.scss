@@ -1,13 +1,3 @@
-@mixin btn-color($color) {
-  background-color: $color;
-
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($color, 15%);
-  }
-}
-
 %scrollbar {
   &::-webkit-scrollbar {
     width: .5rem;
