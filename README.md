@@ -4,7 +4,7 @@ layout: home
 # consola.css [![NPM][icon-npm]][link-npm] [![Bower][icon-bower]][link-bower] [![NPM Downloads][icon-npm-dt]][link-npm] [![license][icon-license]][link-license] [![Code Climate][icon-codeclimate]][link-codeclimate]
 consola.css is a lightweight CSS micro-framework for a console like style.
 
-It is very minimalistic and has therefore a small footprint of under **5 kB gzipped**.
+It is very minimalistic and has therefore a small footprint of under **5.2 kB gzipped**.
 It also includes SCSS and CSS files and comes with a gulpfile for customizing the build.
 
 ## Installation
@@ -36,7 +36,7 @@ $red: #ff0000;
 ```
 
 ### Using the CSS
-Just add a `<link>` in your `<head>` of either `consola.css` or 
+Just add a `<link>` in your `<head>` of either `consola.css` or
 the minified version `consola.min.css`.
 
 ## License
@@ -49,8 +49,8 @@ See [LICENSE](LICENSE) for full license description
 * [Flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid) for the grid style.
 
 
-[icon-codeclimate]: https://img.shields.io/codeclimate/github/PascalKleindienst/consola.css.svg?style=flat-square
-[link-codeclimate]: https://codeclimate.com/github/PascalKleindienst/consola.css
+[icon-codeclimate]: https://api.codeclimate.com/v1/badges/7fe8ca1359f70a009a19/maintainability
+[link-codeclimate]: https://codeclimate.com/github/PascalKleindienst/consola.css/maintainability
 [icon-license]: https://img.shields.io/github/license/PascalKleindienst/consola.css.svg?style=flat-square
 [link-license]: https://raw.githubusercontent.com/PascalKleindienst/consola.css/master/LICENSE
 [icon-npm]: https://img.shields.io/npm/v/consola.css.svg?style=flat-square
