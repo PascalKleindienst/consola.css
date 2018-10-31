@@ -1,24 +1,38 @@
-.bg-red        { background-color: $red; }
-.bg-magenta    { background-color: $magenta; }
-.bg-green      { background-color: $green; }
-.bg-blue       { background-color: $blue; }
-.bg-cyan       { background-color: $cyan; }
+@each $idx, $color in $colors {
+  // Background Color
+  .bg-#{$idx},
+  .btn-#{$idx} {
+    background-color: $color;
+  }
 
-.bg-yellow     {
-  background-color: $yellow;
-  color: $dark-background;
+  // Text Colors
+  .text-#{$idx},
+  .anchor-#{$idx} a {
+    color: $color;
+  }
+
+  .anchor-#{$idx} a:hover,
+  .anchor-#{$idx} a:active,
+  .anchor-#{$idx} a:focus {
+    color: darken($color, 15%);
+  }
+
+  // Buttons
+  .btn-#{$idx} {
+    @extend .text-white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      @extend .text-white;
+      background-color: darken($color, 15%);
+    }
+  }
 }
 
-.bg-white      {
-  background-color: $white;
-  color: $dark-background;
+.bg-yellow, .bg-white, .btn-yellow {
+  @extend .text-dark;
 }
-
-
-.text-red        { color: $red; }
-.text-magenta    { color: $magenta; }
-.text-green      { color: $green; }
-.text-yellow     { color: $yellow; }
-.text-blue       { color: $blue; }
-.text-cyan       { color: $cyan; }
-.text-white      { color: $white; }
+.bg-dark {
+  @extend .text-white;
+}

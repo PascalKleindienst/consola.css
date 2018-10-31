@@ -7,6 +7,20 @@ $magenta: #d80073 !default;
 $cyan:    #00bcd4 !default;
 $white:   #ecf0f1 !default;
 $gray:    #2c3e50 !default;
+$dark:    darken($gray, 4%) !default;
+$light:   darken($white, 8%) !default;
+$colors: (
+    'red':     $red,
+    'green':   $green,
+    'yellow':  $yellow,
+    'blue':    $blue,
+    'magenta': $magenta,
+    'cyan':    $cyan,
+    'white':   $white,
+    'gray':    $gray,
+    'light':   $light,
+    'dark':    $dark
+) !default;
 
 // Viewports
 $viewport-m: 32rem !default;
@@ -19,9 +33,18 @@ $font-weight: 400 !default;
 $font-family: 'Inconsolata', 'Lucida Console', Courier, monospace !default;
 
 // Dark Theme (default)
-$dark-background: $gray !default;
+$dark-background: $dark !default;
 $dark-font-color: $white !default;
 $dark-link-color: $yellow !default;
+
+// Light Theme
+$light-background: $light !default;
+$light-font-color: $gray !default;
+$light-link-color: $blue !default;
+
+// Menu
+$menu-item-before: '[' !default;
+$menu-item-after: ']' !default;
 
 // Code
 $code-color: darken($green, 15%) !default;
