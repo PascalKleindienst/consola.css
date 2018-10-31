@@ -5,6 +5,8 @@ var cssmin  = require('gulp-minify-css');
 var prefix  = require('gulp-autoprefixer');
 var size    = require('gulp-size');
 var header  = require('gulp-header');
+var tildeImporter = require('node-sass-tilde-importer');
+
 
 var pkg = require('./package.json');
 var banner = ['/**',
@@ -17,7 +19,9 @@ var banner = ['/**',
 
 gulp.task('scss', function() {
   return gulp.src('scss/consola.scss')
-    .pipe(sass())
+    .pipe(sass({
+      importer: tildeImporter
+    }))
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix({browsers: ['last 2 versions', 'Android >= 4']}))
     .pipe(rename('consola.css'))
