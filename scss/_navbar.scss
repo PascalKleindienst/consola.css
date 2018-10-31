@@ -1,0 +1,161 @@
+// Navbar
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  &.navbar-top,
+  &.navbar-fixed-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &.navbar-fixed-top {
+    position: fixed;
+  }
+}
+
+// Menu
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+
+  li { display: inline; }
+}
+
+// Menu item
+.navbar-item {
+  &::before,
+  &::after {
+    display: inline-block;
+    transition: all .25s;
+    opacity: 0;
+  }
+
+  &::before {
+    transform: translateX(.75rem);
+    margin-right: .375rem;
+    content: $menu-item-before;
+  }
+
+  &::after {
+    transform: translateX(-.75rem);
+    margin-left: .375rem;
+    content: $menu-item-after;
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after,
+  &.active::before,
+  &.active::after {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Toggler
+.navbar-toggler {
+  display: none;
+  position: relative;
+
+  input {
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 40px;
+    height: 2rem;
+  }
+
+  // Hamburger
+  span {
+    display: block;
+    position: relative;
+    transform-origin: 4px 0;
+    transition: transform .5s cubic-bezier(.77, .2, .05, 1),
+      opacity .5s ease;
+    z-index: 1;
+    margin-bottom: 5px;
+    width: 2rem;
+    height: 4px;
+
+    &:first-child {
+      transform-origin: 0 0;
+    }
+
+    &:nth-last-child(2) {
+      transform-origin: 0 100%;
+    }
+  }
+
+  // Hamburger X
+  input:checked ~ span:nth-last-child(3) {
+    transform: rotate(45deg) translate(1px, -1px);
+    opacity: 1;
+  }
+
+  input:checked ~ span:nth-last-child(2) {
+    opacity: 0;
+  }
+
+  input:checked ~ span:last-child {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  // show menu
+  &.open ~ .navbar-menu {
+    visibility: visible;
+    height: auto;
+  }
+}
+
+// Light theme
+.navbar-light {
+  @extend .bg-light;
+  @extend .text-gray;
+
+  .navbar-toggler span {
+    background: $light-link-color;
+  }
+}
+
+// Dark Theme
+.navbar-dark {
+  @extend .bg-dark;
+  @extend .text-white;
+
+  .navbar-toggler span {
+    background: $dark-link-color;
+  }
+}
+
+// Repsonsiveness
+@media (max-width: 576px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu {
+    visibility: hidden;
+    width: 100%;
+    height: 0;
+
+    li { display: block; }
+  }
+
+  .navbar-toggler { display: block;}
+
+  .navbar-item {
+    display: block;
+    padding: .75rem .5rem;
+  }
+}

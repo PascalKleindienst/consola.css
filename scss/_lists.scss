@@ -2,7 +2,7 @@
   list-style-type: none;
 }
 
-ul:not(.list-unstyled) {
+ul:not(.list-unstyled):not(.navbar-menu) {
   padding-left: 0;
   list-style-type: none;
 
